@@ -10,7 +10,7 @@ const Review = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     // const [imageURL, setIMageURL] = useState(null);
   
-  
+  console.log('review');
      const onSubmit = data => {
         const serviceData = {
           name: data.name,
@@ -37,24 +37,7 @@ const Review = () => {
 
      };
      
-    // const handleImageUpload = event => {
-    //   console.log(event.target.files[0])
-    //    const imageData = new FormData();
-    //    imageData.set('key', '386ffebd8a87c90c60e29d6dfc72e4e2');
-    //     imageData.append('image', event.target.files[0]);
-      
-    //    axios.post('https://api.imgbb.com/1/upload', 
-       
-    //    imageData)
-    //    .then(function (response) {
-    //        setIMageURL(response.data.data.display_url);
-    //   //    setIMageURL(response.data.data.display_url);
-    //    })
-    //    .catch(function (error) {
-    //    console.log(error);
-    //    });
   
-    // }
 
 
 

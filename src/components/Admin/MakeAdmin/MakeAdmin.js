@@ -25,7 +25,7 @@ const MakeAdmin = () => {
          body: JSON.stringify(adminData)
         })
         .then(res =>{
-        alert('service Added')
+        alert('admin Added')
         } 
         // console.log('server side response', res)
         )

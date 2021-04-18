@@ -12,6 +12,16 @@ const AdminSidebar = () => {
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
                     </Link>
                 </li> */}
+
+
+
+                    <li>
+                    <Link to="/review" className="text-white">
+                        <FontAwesomeIcon icon={faHome} /> <span>Review</span>
+                    </Link>
+                    </li>
+
+
                 <li>
                     <Link to="/home" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>

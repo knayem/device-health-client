@@ -19,10 +19,7 @@ import BookList from '../BookList/BookList';
 
 const Dashboard = () => {
 
- 
-
-
-    return (
+ return (
 
 
 
@@ -34,6 +31,9 @@ const Dashboard = () => {
    </Col> 
 
    <Col md={5}> 
+
+   <Router>
+
   <Switch>
      {/* <Route exact path="/dashboard">
   <OrderPlacement></OrderPlacement>
@@ -42,14 +42,27 @@ const Dashboard = () => {
        {/* <Dashboard></Dashboard> */}
       {/* <OrderPlacement></OrderPlacement> 
     </Route> */}
-   
   
-    <Route path="/bookService/review">
+  {/* <Route path="/dashboard/review">
+      <Review></Review>
+    </Route> */}
+    {/* <Route path="/bookList">
+      <BookList></BookList>
+    </Route> */}
+
+
+
+  
+    {/* <Route path="/dashboard/review">
       <Review></Review>
     </Route>
-    <Route path="/bookService/bookList">
+    <Route path="/dashboard/bookList">
       <BookList></BookList>
     </Route>
+
+    <Route path="/dashboard/bookService/:_id">
+      <OrderPlacement></OrderPlacement>
+    </Route> */}
    
     {/* <Route path="/addService">
       <AddService></AddService>
@@ -60,6 +73,8 @@ const Dashboard = () => {
 
 
   </Switch>
+
+  </Router>
    </Col>
   </Row> 
 

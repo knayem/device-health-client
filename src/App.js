@@ -16,6 +16,7 @@ import {
 
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import OrderPlacement from './components/OrderPlacement/OrderPlacement';
+import Review from './components/Dashboard/Review/Review';
 export const UserContext = createContext();
 
 function App() {
@@ -33,14 +34,32 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/dashboard/review">
+            <Review></Review>
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          {/* <PrivateRoute path="/bookService/:_id">
+             <Dashboard></Dashboard>  */}
+          
+        
           <PrivateRoute path="/bookService/:_id">
-            {/* <Dashboard></Dashboard> */}
-          <OrderPlacement></OrderPlacement> 
-          </PrivateRoute> 
+             <OrderPlacement></OrderPlacement>
+        
+          </PrivateRoute>  
+            {/* <PrivateRoute path="/dashboard">
+          <Dashboard></Dashboard>
+           
+          </PrivateRoute>  */}
 
           <PrivateRoute path="/admin">
             <Admin></Admin>
           </PrivateRoute>
+
+
+         
+
 
           <Route path="/login">
            <Login></Login>

@@ -15,7 +15,7 @@ const NavBar = () => {
     <Nav className="ml-auto " aria-controls="basic-navbar-nav">
       <Link to="/home"  > <h5 style={{color: 'black'}}>  Home</h5></Link>
       <Link  to="/about"   > <h5 style={{color: 'black'}}>About</h5></Link>
-      <Link  to="/services"   ><h5 style={{color: 'white'}}>Services</h5></Link>
+      <Link  to="/dashboard"   ><h5 style={{color: 'white'}}>Dashboard</h5></Link>
       <Link  to="/contactUs"  ><h5 style={{color: 'white'}}>Contact Us </h5></Link>
       <Link  to="/admin"  ><h5 style={{color: 'white'}}>Admin</h5></Link>
       <Link  to="/login"  ><h5 style={{color: 'white'}}>Login</h5></Link>

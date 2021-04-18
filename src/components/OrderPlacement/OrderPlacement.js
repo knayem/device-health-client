@@ -91,6 +91,7 @@ const OrderPlacement = () => {
      
       <br></br>
       <h4>Your Service Charge will be : {details.price}<span style={{ color: 'red' }}>$</span> </h4>
+      <PaymentProcess></PaymentProcess>
       <input onClick={handleBooking} style={{ backgroundColor: 'red', color: 'white'}} type="submit" />
 
     </form>
@@ -98,7 +99,7 @@ const OrderPlacement = () => {
 
     <div className="col-md-5 " >
     <h1>Pay With..<span style={{color:'blue' ,fontSize:'25px'}} >visa </span></h1>
-    <PaymentProcess></PaymentProcess>
+    {/* <PaymentProcess></PaymentProcess> */}
 
     </div>
     

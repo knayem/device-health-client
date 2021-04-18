@@ -13,6 +13,7 @@ import Home from '../Home/Home';
 import ManageServices from './ManageServices/ManageServices';
 import ShowManageServices from './ShowManageServices/ShowManageServices';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
+import Review from '../Dashboard/Review/Review';
 
 const Admin = () => {
     return (
@@ -39,7 +40,9 @@ const Admin = () => {
           <Route path="/makeAdmin">
             <MakeAdmin></MakeAdmin>
           </Route>
-         
+          <Route path="/makeAdmin">
+            <Review></Review>
+          </Route>
           <Route path="/addService">
             <AddService></AddService>
           </Route>
