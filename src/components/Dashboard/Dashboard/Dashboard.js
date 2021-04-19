@@ -79,31 +79,6 @@ const Dashboard = () => {
   </Row> 
 
 
-
-//         <Container>
-
-//   <Row>
-
-//     <Col sm={3}>
-//   <DashboardHeader></DashboardHeader>
-    
-//     </Col>
-    
-//     {/* <Col>
-    
-//     </Col> */}
-
-     
-//     <Col sm={9}>
-//     <OrderPlacement></OrderPlacement>
-
-//     </Col>
-  
-  
-//   </Row>
-
-
-// </Container>
         
     );
 };

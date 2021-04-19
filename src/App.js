@@ -1,4 +1,3 @@
-
 import './App.css';
 import Admin from './components/Admin/Admin';
 
@@ -17,6 +16,7 @@ import {
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import OrderPlacement from './components/OrderPlacement/OrderPlacement';
 import Review from './components/Dashboard/Review/Review';
+import BookList from './components/Dashboard/BookList/BookList';
 export const UserContext = createContext();
 
 function App() {
@@ -34,31 +34,31 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          
+
+          <Route path="/dashboard/bookList">
+           <BookList></BookList>
+          </Route>
+
           <Route path="/dashboard/review">
             <Review></Review>
           </Route>
-          <Route path="/dashboard">
+          
+          <PrivateRoute path="/dashboard">
             <Dashboard />
-          </Route>
-          {/* <PrivateRoute path="/bookService/:_id">
-             <Dashboard></Dashboard>  */}
+          </PrivateRoute>
+         
           
         
           <PrivateRoute path="/bookService/:_id">
              <OrderPlacement></OrderPlacement>
         
           </PrivateRoute>  
-            {/* <PrivateRoute path="/dashboard">
-          <Dashboard></Dashboard>
-           
-          </PrivateRoute>  */}
-
+          
+        
           <PrivateRoute path="/admin">
             <Admin></Admin>
           </PrivateRoute>
-
-
-         
 
 
           <Route path="/login">

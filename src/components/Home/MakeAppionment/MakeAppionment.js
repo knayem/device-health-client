@@ -49,17 +49,13 @@ const MakeAppionment = () => {
       <form onSubmit={handleSubmit(onSubmit)}> 
       <br/>
      <input style={{height:'30px', width:'400px',marginLeft: '5%'}} type="text" placeholder="your email address" name="customerEmail" defaultValue=""  ref={register} />
-      
      <br/>
-     
      <input style={{height:'30px', width:'400px',marginLeft: '5%'}} type="text" placeholder="Your name" name="customerName" defaultValue=""  ref={register} />
      <br/>
-     
      
      <input style={{height:'30px', width:'400px',marginLeft: '5%'}} type="text" placeholder="Your Phone Number" name="Phone" defaultValue="" ref={register} />
 
      <br/>
-     
      
      <input style={{height:'30px', width:'400px',marginLeft: '5%'}} type="text" placeholder="Type your Service " name="name" defaultValue="" ref={register} />
 

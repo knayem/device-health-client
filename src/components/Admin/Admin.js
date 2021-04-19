@@ -14,10 +14,13 @@ import ManageServices from './ManageServices/ManageServices';
 import ShowManageServices from './ShowManageServices/ShowManageServices';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
 import Review from '../Dashboard/Review/Review';
+import AllBooks from './AllBooks/AllBooks';
+import AppointmentRequest from './AppointmentRequest/AppointmentRequest';
 
 const Admin = () => {
     return (
         <div>
+        
             
             <Router>
             <Row>
@@ -28,30 +31,31 @@ const Admin = () => {
 
         <Col md={5}>
         <Switch>
-           <Route exact path="/admin">
-         <ManageServices></ManageServices>
-          </Route> 
+          
            <Route path="/manageServices">
             <ManageServices></ManageServices>
           </Route>
-          {/* <Route path="/home">
-            <Home></Home>
-          </Route> */}
+          
           <Route path="/makeAdmin">
             <MakeAdmin></MakeAdmin>
           </Route>
+          
+          <Route path="/bookList">
+            <AllBooks></AllBooks>
+          </Route>
+
           <Route path="/makeAdmin">
             <Review></Review>
           </Route>
           <Route path="/addService">
             <AddService></AddService>
           </Route>
+          
 
-          {/* <Route path="/editProduct">
-          <EditProduct/>
-            
+          <Route path="/reqAppointment">
+           <AppointmentRequest></AppointmentRequest>
           </Route>
-            */}
+          
 
 
         </Switch>
