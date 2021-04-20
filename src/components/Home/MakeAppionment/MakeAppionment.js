@@ -22,7 +22,7 @@ const MakeAppionment = () => {
           // imageURL: imageURL
         };
         console.log(serviceData);
-       const url = `http://localhost:5055/requestAppointment`;
+       const url = `https://protected-sands-24943.herokuapp.com/requestAppointment`;
       
         fetch(url, {
           method: 'POST', 
@@ -32,9 +32,9 @@ const MakeAppionment = () => {
          body: JSON.stringify(serviceData)
         })
         .then(res =>{
-        alert('You Will Get an Appointment by SMS')
+        alert('You Will Get an Appointment details by an Email')
         } 
-        // console.log('server side response', res)
+        
         )
 
      };
@@ -44,8 +44,9 @@ const MakeAppionment = () => {
 
 
     return (
-      <div className="align-items-center justify-content-around" style={{marginTop: '5%',marginLeft: '15%',backgroundColor:'blue',width:'700px' ,align: 'center'}}>
-                <h1 style={{color:'white', textAlign: 'center'}}>Make Your Appointment</h1>
+      <div  style={{backgroundColor:'#F0F8FF'}}>
+      <div className="align-items-center justify-content-around" style={{marginTop: '5%',marginLeft: '15%',backgroundColor:'blue',width:'600px' ,align: 'center'}}>
+                <h1 style={{color:'white'}}>Make Your Appointment</h1>
       <form onSubmit={handleSubmit(onSubmit)}> 
       <br/>
      <input style={{height:'30px', width:'400px',marginLeft: '5%'}} type="text" placeholder="your email address" name="customerEmail" defaultValue=""  ref={register} />
@@ -66,6 +67,7 @@ const MakeAppionment = () => {
      <br/>
      <input style={{marginLeft: '20%',marginBottom:'1%'}} type="submit" />
    </form>
+   </div>
    </div>
   );
 };

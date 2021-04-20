@@ -15,7 +15,7 @@ const MakeAdmin = () => {
           // imageURL: imageURL
         };
         console.log(adminData);
-       const url = `http://localhost:5055/makeAdmin`;
+       const url = `https://protected-sands-24943.herokuapp.com/makeAdmin`;
       
         fetch(url, {
           method: 'POST', 

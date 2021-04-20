@@ -8,9 +8,14 @@
     background-color:#3A4256;
 }
 .info-container{
-    height: 100px;
+    height: 110px;
     padding:30px;
 }
 .info-icon{
     font-size: 3em;
+}
+.card-info:hover{
+    border: 2px solid blue;
+    border-radius: 15px;
+    transform: scale(1.05);
 }

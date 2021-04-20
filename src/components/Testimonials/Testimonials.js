@@ -10,7 +10,7 @@ const Testimonials = () => {
 
 
 
-        fetch('http://localhost:5055/reviews')
+        fetch('https://protected-sands-24943.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
 
@@ -31,11 +31,11 @@ reviews.length === 0 && <ReactBootStrap.Spinner animation="border" variant="warn
 {
                 reviews.map(reviews => <ul>
                     
-                    <Card>
-  <Card.Header>{reviews.customerName}</Card.Header>
+                    <Card style={{width: '100%'}}>
+  <Card.Header style={{ textAlign: 'center'}}> <h5>{reviews.customerName}</h5></Card.Header>
   <Card.Body>
-    <Card.Title>{reviews.name}</Card.Title>
-    <Card.Text>
+    <Card.Title style={{ textAlign: 'center'}}>{reviews.name}</Card.Title>
+    <Card.Text style={{ textAlign: 'center'}}>
             {reviews.description}
     </Card.Text>
   </Card.Body>

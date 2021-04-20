@@ -5,7 +5,7 @@ import { UserContext } from '../../App';
 const NavBar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
-        <div>
+        <div class="navbar-toggler align-items-center justify-content-around">
             
 
 <Navbar bg="dark" variant="dark">

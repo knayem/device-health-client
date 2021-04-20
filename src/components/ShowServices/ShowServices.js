@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './ShowServices.css'
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +17,7 @@ const ShowServices = (props) => {
                <div id="div-position" style={serviceStyle} className="league d-flex align-items-center
          justify-content-around  ">
       <Card className="home-card" style={{ width: '26rem', height: '320px', backgroundColor: 'whiteSmoke' }}>
-        <Card.Img style={{ width: '100%', height: '210px' }} variant="top" src={imageURL} />
+        <Card.Img className="card-img" style={{ width: '100%', height: '210px' }} variant="top" src={imageURL} />
         <Card.Body>
           <Card.Text>
             <h2 style={{ color: 'navy', textAlign: 'center' }}>  {name} <span style={{ color: 'red'}}> {price}$</span> </h2>

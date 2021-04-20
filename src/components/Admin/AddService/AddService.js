@@ -15,7 +15,7 @@ const AddService = () => {
           imageURL: imageURL
         };
         console.log(serviceData);
-       const url = `http://localhost:5055/addService`;
+       const url = `https://protected-sands-24943.herokuapp.com/addService`;
       
         fetch(url, {
           method: 'POST', 

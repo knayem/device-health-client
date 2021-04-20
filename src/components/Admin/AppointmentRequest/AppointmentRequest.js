@@ -11,7 +11,7 @@ const AppointmentRequest = () => {
 
     useEffect(() => {
 
-         fetch('http://localhost:5055/appointment')
+         fetch('https://protected-sands-24943.herokuapp.com/appointment')
 
             .then(res => res.json())
             .then(data =>  setAppointments(data));

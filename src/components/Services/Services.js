@@ -9,7 +9,7 @@ const Services = () => {
 
 
 
-        fetch('http://localhost:5055/services')
+        fetch('https://protected-sands-24943.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
 

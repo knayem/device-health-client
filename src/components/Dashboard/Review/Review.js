@@ -20,7 +20,7 @@ const Review = () => {
           // imageURL: imageURL
         };
         console.log(serviceData);
-       const url = `http://localhost:5055/addReview`;
+       const url = `https://protected-sands-24943.herokuapp.com/addReview`;
       
         fetch(url, {
           method: 'POST', 

@@ -12,7 +12,7 @@ const AllBooks = () => {
 
     useEffect(() => {
 
-         fetch('http://localhost:5055/books')
+         fetch('https://protected-sands-24943.herokuapp.com/books')
 
             .then(res => res.json())
             .then(data => setAllBooking(data));

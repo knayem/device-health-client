@@ -6,7 +6,7 @@ const ShowManageServices = (props) => {
      
      const  deleteService= id => {
         console.log(id);
-       fetch(`http://localhost:5055/deleteService/${id} `,{
+       fetch(`https://protected-sands-24943.herokuapp.com/deleteService/${id} `,{
  
            method: 'DELETE',
  

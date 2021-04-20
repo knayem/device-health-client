@@ -21,7 +21,7 @@ const OrderPlacement = () => {
   console.log(_id);
   useEffect(() => {
 
-    fetch('http://localhost:5055/services/' + _id)
+    fetch('https://protected-sands-24943.herokuapp.com/services/' + _id)
       .then(res => res.json())
       .then(data => setDetails(data));
 
@@ -41,7 +41,7 @@ const OrderPlacement = () => {
       orderTime: new Date()
     };
     console.log(newBook);
-    fetch('http://localhost:5055/addBook', {
+    fetch('https://protected-sands-24943.herokuapp.com/addBook', {
 
       method: 'POST',
       headers: {
@@ -81,7 +81,7 @@ const OrderPlacement = () => {
   //    console.log('submitted')
   //    const newBook = {  UserEmail, UserNames, price, name, orderTime: new Date() };
   //    console.log(newBook);
-  //    fetch('http://localhost:5055/addBook', {
+  //    fetch('https://protected-sands-24943.herokuapp.com/addBook', {
 
   //     method: 'POST',
   //      headers: {

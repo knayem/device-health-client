@@ -3,8 +3,8 @@ import { Card,CardGroup, } from 'react-bootstrap';
 
 const OurNews = () => {
     return (
-        <div>
-            <h1 style={{textAlign: 'center'}}>Our News</h1>
+        <div style={{marginTop: '5%'}}>
+            <h1 style={{textAlign: 'center',color: 'red'}}>Our News</h1>
             <CardGroup>
                 <Card>
                     <Card.Img
