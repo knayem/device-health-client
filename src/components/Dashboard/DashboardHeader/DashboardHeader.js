@@ -53,12 +53,7 @@ const DashboardHeader = () => {
                         <FontAwesomeIcon icon={faHome} /> <span style={{ color: 'black' }}>Home</span>
                     </Link>
                 </MenuItem>
-                 {/* <MenuItem icon={<FaList />}>
-
-                 <Link to="/dashboard/bookService/:_id" className="text-white">
-                        <FontAwesomeIcon icon={faCartPlus} /><span style={{ color: 'black' }}>Book</span>
-                        </Link> 
-                </MenuItem>  */}
+               
                 <MenuItem icon={<FaRegHeart />}>
                 <Link to="/dashboard/bookList" className="text-white" >
                             <FontAwesomeIcon icon={faShoppingBag} /> <span style={{ color: 'black' }}>Book List</span>

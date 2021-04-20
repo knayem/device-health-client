@@ -9,10 +9,7 @@ const ShowServices = (props) => {
   
     const { name, price, imageURL,_id } = props.service;
   const serviceStyle = { background_color: ' rgb(47, 4, 88)', float: 'left ', padding: '15px' }
-//   const history = useHistory();
-//   const handleBook =()=>{
-//     history.push(`/bookService/${id}`)
-// }
+
     return (
     
        

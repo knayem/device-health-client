@@ -14,8 +14,6 @@ import { UserContext } from '../../../App';
 
          fetch(`http://localhost:5055/books/${email} `)
 
-       // fetch('http://localhost:5055/booking?email' + email)
-
             .then(res => res.json())
             .then(data => setBooking(data));
 

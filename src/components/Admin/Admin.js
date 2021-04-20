@@ -31,7 +31,8 @@ const Admin = () => {
 
         <Col md={5}>
         <Switch>
-          
+
+        
            <Route path="/manageServices">
             <ManageServices></ManageServices>
           </Route>

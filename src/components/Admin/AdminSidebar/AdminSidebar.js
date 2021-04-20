@@ -20,21 +20,10 @@ const AdminSidebar = () => {
     }, [])
 
     return (
-        <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{ height: '350px',backgroundColor: '#00CED1' }} >
+        <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{ height: '650px',backgroundColor: '#00CED1' }} >
               <ul >
-                {/* <li>
-                    <Link to="/dashboard" className="text-white">
-                        <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
-                    </Link>
-                </li> */}
-
-
-
-                <li>
-                    <Link to="/home" className="text-white">
-                        <FontAwesomeIcon icon={faHome} /> <span>Home</span>
-                    </Link>
-                    </li>
+               
+             
                    
                    {isAdmin && <div>
                    
@@ -54,7 +43,7 @@ const AdminSidebar = () => {
                             <FontAwesomeIcon icon={faTasks} /> <span>Manage Services</span>
                         </Link>
                     </li>
-
+                    
                     <li>
                         <Link to="/makeAdmin" className="text-white" >
                             <FontAwesomeIcon icon={faUsers} /> <span>Make Admin</span>
